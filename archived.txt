@@ -1,7 +1,0 @@
-<h3 class="white text-center bold" id="login-or-signup">Login</h3>
-<label for="email">Email address:</label>
-<input type="email" class="form-control" id="email">
-<label for="pwd">Password:</label>
-<input type="password" class="form-control" id="pwd">
-<br>
-<button class="btn btn-primary" id="password-submit">Submit</button>
