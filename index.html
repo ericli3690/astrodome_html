@@ -9,11 +9,95 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&display=swap" rel="stylesheet">
   <link href="./main.css" rel="stylesheet">
   <title>Astrodome</title>
+  <link rel="icon" href="./images/letter.png" />
+  <script src="./scripts.js"></script>
 </head>
-  <body>
-    <h1>ASTRODOME</h1>
-    <img src="./images/transparent_logo.png" class="img-fluid" alt="logo" width="200px" height="150"></img>
-  </body>
+<body>
+
+  <div class="jumbotron text-center">
+    <a href="index.html">
+      <img src="./images/white_backing_logo.png" class="img-fluid banner" alt="logo"></img>
+    </a>
+  </div>
+
+  <div class="bg-image back d-flex justify-content-center align-items-center" id="main-div">
+
+    <div id="ad">
+      <p class="white text-center">Help your kids find new friends among the stars...</p>
+      <p class="white text-center">Find pen-pals, friends for life, or study buddies who share your interests!</p>
+      <button class="btn meet teal meet-bold" id="signup-trigger">Meet Someone New</button>
+      <br><br><br><br>
+      <button class="btn btn-default meet teal" id="login-trigger">I already have an account.</button>
+    </div>
+
+    <div class="initial-hide" id="login">
+      <h3 class="white text-center bold" id="login-or-signup">Login</h3>
+
+
+
+
+      <!-- SIGNUP AND INTERESTS SELECTION -->
+      <br><h1 class='white' style="color:red;">INSERT SIGNUP AND INTERESTS HERE </h1><br>
+
+
+
+
+      <h4 class="white text-center bold">Pick an Avatar Icon</h4>
+      <br>
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <img class="profile-pic" src="./images/shipBeige_manned.png" width="40px" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img class="profile-pic" src="./images/shipBlue_manned.png" width="40px" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img class="profile-pic" src="./images/shipGreen_manned.png" width="40px" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img class="profile-pic" src="./images/shipPink_manned.png" width="40px" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img class="profile-pic" src="./images/shipYellow_manned.png" width="40px" />
+        </div>
+      </div>
+      <br><br>
+      <h4 class="white text-center" id="alien-name">Your alien name will be: [Loading...]</h4>
+      <br>
+      <h4 class="text-center" style="color:red;" id="error">Whoops! Please choose a profile picture!</h4>
+
+      <button class="btn-primary" id="login-submit">Submit</button>
+    </div>
+
+    <div class="initial-hide" id="chatroom">
+      <div class="d-flex justify-content-center" id="chatbox backed">
+
+
+        <!-- CHATBOX -->
+        <br><h1 class='white' style="color:red;">INSERT CHATROOM HERE</h1><br>
+        <!-- preferably use the username and profile pic here; currently theyre stored as cookies but storing them in the server will be better -->
+        <!-- do note that you have to have local cookies enabled or something to have it work, check if cookies are working by typing document.cookie in the console after cookies should have been updated (ctrl-shift-j on chrome) -->
+
+
+      </div>
+      <p class="white d-flex justify-content-center">Remember: don't share sensitive personal information (like your password)</p>
+      <h3 class="white d-flex justify-content-center" id="discussion-idea">Discussion Idea:</h2>
+      <div id="evaluate-buttons">
+        <button class="btn btn-success" id="share-contact">Potential Friend! Let's Keep Chatting!</button> <!-- autoshare discord in chat or something, have the discord be part of the form -->
+        <button class="btn btn-primary" id="farewell">Nice Chatting With You! Bye!</button> <!-- reset the chatbox, query a new user -->
+        <button class="btn btn-danger" id="block">Uh oh! Report and block them.</button> <!-- block the user -->
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <p class="footer">A Submission for Vivid Hacks 2021 by Gautham Venkateshwaran and Eric Li</p>
+  </div>
+
+</body>
 </html>
